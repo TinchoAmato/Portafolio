@@ -1,0 +1,21 @@
+@keyframes ewk_keyframes_aparecer_izquierda{
+    form{
+        opacity: 0;
+        bottom: -150px;
+    }
+    to{
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+
+@-webkit-keyframes ewk_keyframes_aparecer_izquierda{
+    form{
+        opacity: 0;
+        bottom: -150px;
+    }
+    to{
+        opacity: 1;
+        bottom: 0px;
+    }
+}
