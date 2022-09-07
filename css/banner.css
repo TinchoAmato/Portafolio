@@ -126,8 +126,12 @@
 }
 
 #primeraEtapa{
-    margin-top: 50px;
+    padding: 40px 0;
     display: flex;
+}
+
+#yel{
+    background-color: rgba(252, 221, 104, 1);
 }
 
 .icon-menu{
@@ -139,19 +143,8 @@
 }
 
 #segundaEtapa{
-    background-color: rgba(252, 221, 104, 1);
-}
-
-.separate{
-    margin-top: 50px;
-    width: 100%;
-    height: 75px;
-    background-color: rgba(252, 221, 104, 1);
-}
-
-.separate-2{
-    width: 100%;
-    height: 50px;
+    display: flex;
+    padding: 40px 0px;
     background-color: rgba(252, 221, 104, 1);
 }
 
@@ -193,13 +186,27 @@
     height: auto;
 }
 
+.flex2{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    flex-flow: wrap-reverse;
+    width: 100%;
+    height: auto;
+}
+
+
 @media screen and (max-width:993px) {
 
     #foto{
-        margin: 0;
+        margin: 40px 0;
     }
 
     .flex{
+        justify-content: center;
+    }
+
+    .flex2{
         justify-content: center;
     }
 
