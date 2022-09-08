@@ -1,0 +1,286 @@
+@mixin neo($radius , $eje , ) {
+    border-radius: $radius;
+    background: #e0e0e0;
+    box-shadow: $eje $eje ($eje*2) #bebebe, (-$eje) (-$eje) ($eje*2) #ffffff;
+}
+
+.ewk_cont_banner{
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/fondo.webp);
+}
+
+.ewk_sobra{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    margin: auto;
+}
+
+.ewk_sobra hr{
+    border-top: 2px solid #fff;
+}
+
+.ewk_sobra h1{
+    margin-bottom: 10px;
+}
+
+.ewk_sobra p{
+    margin-bottom: 10px;
+    color: rgba(252, 221, 104, 1);
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.ewk_cont_banner_link{
+    margin: 15px;
+    position: relative;
+}
+
+.ewk_cont_banner_link a{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 1px;
+    border-radius: 25px;
+    margin: 5px;
+    width: 150px;
+}
+
+.ewk_cont_banner_link a:hover{
+    background-color: #fff;
+    box-shadow: 0 0 10px 3px rgba(252, 221, 104, 1);
+    transition: box-shadow 0.2s;
+    color: rgba(252, 221, 104, 1);
+    transition: all 0.5s
+}
+
+.ewk_banner_link{
+    position: relative;
+    opacity: 0;
+    animation: ewk_keyframes_aparecer_izquierda 2s;
+    -webkit-animation: ewk_keyframes_aparecer_izquierda 2s;
+    animation-fill-mode: forwards;
+}
+
+.ewk_banner_link_1{
+    position: relative;
+    opacity: 0;
+    animation: ewk_keyframes_aparecer_izquierda 2s;
+    -webkit-animation: ewk_keyframes_aparecer_izquierda 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+.ewk_banner_link_2{
+    position: relative;
+    opacity: 0;
+    animation: ewk_keyframes_aparecer_izquierda 1s;
+    -webkit-animation: ewk_keyframes_aparecer_izquierda 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s ;
+}
+
+.ewk_navbar {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(5px) !important;
+}
+
+
+.ewk_cont_footer{
+    background-color: rgba(1, 1, 1, 0.7);
+    padding: 10%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    color: #fff;
+}
+
+.ewk_cont_footer a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.ewk_cont_derechos{
+    opacity: 0.1;
+    text-align: center;
+}
+
+.nav-item a, .navbar-brand{
+    color: rgba(252, 221, 104, 1) !important;
+    text-shadow: -1px -1px 5px #000, -2px -2px 7px #555 !important;
+    text-decoration: underline 2px rgba(252, 221, 104, 1);
+}
+
+.row hr{
+    margin-top: 30px;
+}
+
+#primeraEtapa{
+    padding: 40px 0;
+    display: flex;
+}
+
+#yel{
+    background-color: rgba(252, 221, 104, 1);
+}
+
+.icon-menu{
+    color: rgba(252, 221, 104, 1);
+}
+
+.amarillo{
+    color: rgba(255, 221, 104, 1)
+}
+
+#segundaEtapa{
+    display: flex;
+    padding: 40px 0px;
+    background-color: rgba(252, 221, 104, 1);
+}
+
+#foto{
+    border: 6px solid rgba(252, 221, 104, 1);
+    border-radius: 200px;
+    margin: auto 0px auto 5%;
+    box-sizing: border-box;
+    min-width: 150px;
+    min-height: 150px;
+    width: 250px;
+    height: 250px;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: -2px 2px 2px #555;
+    background-image: url('https://media-exp1.licdn.com/dms/image/C4E03AQGHSTdgOSNW6A/profile-displayphoto-shrink_800_800/0/1633399057897?e=2147483647&v=beta&t=esh6w7vg9OKLQfleq9pXg8-e4x1NpADzcEUemuJlWf4');
+}
+
+#foto2{
+    border: 6px solid #fff;
+    border-radius: 200px;
+    margin: auto 5% auto 0;
+    box-sizing: border-box;
+    min-width: 150px;
+    min-height: 150px;
+    width: 250px;
+    height: 250px;
+    box-shadow: -2px 2px 3px #555;
+}
+
+#foto2:hover{
+    border: 5px solid #fff;
+    box-shadow: -3px 3px 3px #555;
+}
+
+#foto:hover{
+    border: 5px solid rgba(252, 221, 104, 1);
+    box-shadow: -3px 3px 2px #555;
+}
+
+.after{
+    margin: auto;
+}
+
+#text{
+    width: 65%;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    flex-flow: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.flex2{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    flex-flow: wrap-reverse;
+    width: 100%;
+    height: auto;
+}
+
+.carrusel{
+    width: 90%;
+    max-width: 120em;
+    padding: 2em;
+    @include neo( 1 , 1em)
+}
+
+.carrusel .grande{
+    width: 600%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    @include neo( 1 , 1em);
+    padding: 2em 0;
+}
+
+.carrusel .img{
+    width: calc(100% / 6 - 2em);
+    @include neo( 1 , 1em);
+    min-height: 10vh;
+}
+
+.carrusel .puntos{
+    margin: 1em 0 0;
+    width: 100%;
+    padding: .4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel .punto{
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    @include neo( 1 , 1em)
+}
+
+@media screen and (max-width:993px) {
+
+    #foto{
+        margin: 40px 0;
+    }
+
+    #foto2{
+        margin: 40px 0;
+    }
+
+    .flex{
+        justify-content: center;
+    }
+
+    .flex2{
+        justify-content: center;
+    }
+
+    #text{
+        width: 90%;
+    }
+
+    #centers{
+        text-align: center;
+    }
+}
